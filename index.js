@@ -13,6 +13,13 @@ Mousetrap.bind('i', function() { window.location = "https://inbox.google.com/?pl
 Mousetrap.bind('n', function() { window.location = "https://www.netflix.com/browse" });
 
 Mousetrap.bind('up up down down left right left right b a', function() {
+    bloop();
+});
+Mousetrap.bind('enter', function() {
+    bloop();
+});
+
+function bloop(){
     var test = document.getElementsByTagName("a")
     for (i in test){
         if(test[i] && test[i] !== undefined && test[i].classList != undefined)
@@ -25,7 +32,7 @@ Mousetrap.bind('up up down down left right left right b a', function() {
             if(test[i] && test[i] !== undefined && test[i].classList != undefined)
                 test[i].classList.remove("hover")
         }
-    }, 1.25*1000)
-});
+    }, .75*1000)
+}
 
 

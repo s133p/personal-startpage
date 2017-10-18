@@ -83,35 +83,30 @@ a i.fa {
     padding-bottom: 6px;
     opacity:.5;
 }
-a:hover, a.hover > i {
+a:hover i, a.hover i {
     animation: bounce .125s ease-in-out .1s alternate 2 both running;
     opacity:1;
 }
-a:hover, a.hover > i.fa { color: #eee; }
-a:hover, a.hover > i.fa-rss-square { color: #FF6600; }
-a:hover, a.hover > i.fa-tumblr-square { color: #35465c; }
-a:hover, a.hover > i.fa-youtube-square { color: #cd201f; }
-
-a:hover, a.hover > i.fa-facebook-square { color: #3B5998; }
-a:hover, a.hover > i.fa-paper-plane { color: #fff; }
-a:hover, a.hover > i.fa-youtube-play { color: #B9090B; }
-
-a:hover, a.hover > i.fa-reddit-square { color: #eee; }
-a:hover, a.hover > i.fa-code { color: #3AADD1; }
-a:hover, a.hover > i.fa-terminal { color: #3AADD1; }
-a:hover, a.hover > i.fa-keyboard-o { color: #3AADD1; }
-
-a:hover, a.hover > i.fa-flag-checkered{ color: #4B7FB1; }
-a:hover, a.hover > i.fa-gift { color: #9A1FFF; }
-a:hover, a.hover > i.fa-university { color: #E5091F; }
-
-a:hover, a.hover > i.fa-weixin { color: #1D4F83; }
-a:hover, a.hover > i.fa-envelope { color: #0070C9; }
-a:hover, a.hover > i.fa-bug { color: #EF7D00; }
-
-a:hover, a.hover > i.fa-tachometer { color: #1980E8; }
-a:hover, a.hover > i.fa-archive { color: #01B1F0; }
-a:hover, a.hover > i.fa-github-alt { color: #fff; }
+a.hover i.fa, a:hover i.fa { color: #eee; }
+a.hover i.fa-rss-square, a:hover i.fa-rss-square { color: #FF6600; }
+a.hover i.fa-tumblr-square, a:hover i.fa-tumblr-square { color: #35465c; }
+a.hover i.fa-youtube-square, a:hover i.fa-youtube-square { color: #cd201f; }
+a.hover i.fa-facebook-square, a:hover i.fa-facebook-square { color: #3B5998; }
+a.hover i.fa-paper-plane, a:hover i.fa-paper-plane { color: #fff; }
+a.hover i.fa-youtube-play, a:hover i.fa-youtube-play { color: #B9090B; }
+a.hover i.fa-reddit-square, a:hover i.fa-reddit-square { color: #eee; }
+a.hover i.fa-code, a:hover i.fa-code { color: #3AADD1; }
+a.hover i.fa-terminal, a:hover i.fa-terminal { color: #3AADD1; }
+a.hover i.fa-keyboard-o, a:hover i.fa-keyboard-o { color: #3AADD1; }
+a.hover i.fa-flag-checkere,da:hover i.fa-flag-checkered{ color: #4B7FB1; }
+a.hover i.fa-gift, a:hover i.fa-gift { color: #9A1FFF; }
+a.hover i.fa-university, a:hover i.fa-university { color: #E5091F; }
+a.hover i.fa-weixin, a:hover i.fa-weixin { color: #1D4F83; }
+a.hover i.fa-envelope, a:hover i.fa-envelope { color: #0070C9; }
+a.hover i.fa-bug, a:hover i.fa-bug { color: #EF7D00; }
+a.hover i.fa-tachometer, a:hover i.fa-tachometer { color: #1980E8; }
+a.hover i.fa-archive, a:hover i.fa-archive { color: #01B1F0; }
+a.hover i.fa-github-alt, a:hover i.fa-github-alt { color: #fff; }
 
 @keyframes startup {
     0% { opacity:0; transform: scale(1.15); }
