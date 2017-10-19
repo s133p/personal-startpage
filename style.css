@@ -2,8 +2,6 @@ body {
     background-color: #231f20;
     font-family: Raleway, Helvetica Neue, Helvetica, sans-serif;
     font-size: .6em;
-    transition: all .45s;
-    transition-timing-function: ease-out;
 }
 .container {
     width: 50%;
@@ -34,8 +32,8 @@ body {
 }
 
 a, a i, .section, .inner-section {
-    transition: all .25s;
-    transition-timing-function: ease-in-out;
+    transition: all .45s;
+    transition-timing-function: ease-out;
 }
 a {
     min-width: 4em;

@@ -32,7 +32,7 @@ function bloop(){
             if(test[i] && test[i] !== undefined && test[i].classList != undefined)
                 test[i].classList.remove("hover")
         }
-    }, .75*1000)
+    }, 1.75*1000)
 }
 
 
