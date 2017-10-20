@@ -10,6 +10,7 @@ Mousetrap.bind('t', function() { chrome.tabs.create({}) });
 // Mousetrap.bind('n', function() { window.location = 'https://www.netflix.com/browse' });
 
 Mousetrap.bind('up up down down left right left right b a', function() { bloop(32, 8); });
+Mousetrap.bind('v o i d', function() { bloop(18, 8); });
 Mousetrap.bind('enter', function() { bloop(1, 30); });
 
 var      l = [];
