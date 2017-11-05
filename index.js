@@ -1,14 +1,51 @@
+function openTabList(urls){
+    var replace = urls[0]
+    for (var i in urls){
+        if (i == 0) continue
+        chrome.tabs.create({url:urls[i], active:false})
+    }
+    window.location = replace
+}
+
 // single keys
 Mousetrap.bind('x', function() { chrome.tabs.getSelected(null, function(tab) { chrome.tabs.remove(tab.id); }); });
 Mousetrap.bind('t', function() { chrome.tabs.create({}) });
 
-// Mousetrap.bind('r', function() { window.location = 'http://feedly.com/i/latest' });
-// Mousetrap.bind('t', function() { window.location = 'https://www.tumblr.com/dashboard' });
-// Mousetrap.bind('y', function() { window.location = 'https://www.youtube.com/' });
-// Mousetrap.bind('f', function() { window.location = 'https://www.facebook.com/' });
-// Mousetrap.bind('i', function() { window.location = 'https://inbox.google.com/?pli=1' });
-// Mousetrap.bind('n', function() { window.location = 'https://www.netflix.com/browse' });
+// 'Presets'
+Mousetrap.bind('2', function() {
+    openTabList([
+        'http://feedly.com/i/latest',
+        'https://www.reddit.com/r/vim/'
+    ])
+});
+Mousetrap.bind('3', function() {
+    openTabList([
+        'http://feedly.com/i/latest',
+        'https://www.facebook.com/',
+        'https://www.tumblr.com/dashboard'
+    ])
+});
+Mousetrap.bind('5', function() {
+    openTabList([
+        'http://feedly.com/i/latest',
+        'https://www.facebook.com/',
+        'https://www.tumblr.com/dashboard',
+        'https://inbox.google.com/?pli=1',
+        'https://www.youtube.com/'
+    ])
+});
+Mousetrap.bind('6', function() {
+    openTabList([
+        'http://feedly.com/i/latest',
+        'https://www.facebook.com/',
+        'https://www.tumblr.com/dashboard',
+        'https://inbox.google.com/?pli=1',
+        'https://www.youtube.com/',
+        'https://www.netflix.com/browse'
+    ])
+});
 
+// Fancy silly mappings
 Mousetrap.bind('up up down down left right left right b a', function() { bloop(32, 8); });
 Mousetrap.bind('v o i d', function() { bloop(18, 24); });
 Mousetrap.bind('enter', function() { bloop(1, 30); });
