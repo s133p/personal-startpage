@@ -76,7 +76,7 @@ a:hover {
     /* border-bottom: 4px solid #F7D3C6; */
     border-bottom: 4px solid #FFF;
 }
-a i.fa {
+a i.fa, a i.fab, a i.far {
     color: #F7D3C6;
     padding-bottom: 6px;
     opacity:.5;
@@ -95,7 +95,7 @@ a.hover i.fa-youtube-play, a:hover i.fa-youtube-play { color: #B9090B; }
 a.hover i.fa-reddit-square, a:hover i.fa-reddit-square { color: #eee; }
 a.hover i.fa-code, a:hover i.fa-code { color: #3AADD1; }
 a.hover i.fa-terminal, a:hover i.fa-terminal { color: #3AADD1; }
-a.hover i.fa-keyboard-o, a:hover i.fa-keyboard-o { color: #3AADD1; }
+a.hover i.fa-keyboard, a:hover i.fa-keyboard { color: #3AADD1; }
 a.hover i.fa-flag-checkere,da:hover i.fa-flag-checkered{ color: #4B7FB1; }
 a.hover i.fa-gift, a:hover i.fa-gift { color: #9A1FFF; }
 a.hover i.fa-university, a:hover i.fa-university { color: #E5091F; }
