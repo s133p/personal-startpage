@@ -5,10 +5,19 @@ Mousetrap.bind('x', function() {
 Mousetrap.bind('t', function() { chrome.tabs.create({}) });
 
 // 'Presets'
+shortcut('0', [
+  'https://downstream.hipchat.com/chat/lobby', 'http://metrics-internal.downstreamlabs.com/metricsd/dashboard/db/lukes-dashboard?refresh=10s&orgId=1'
+]);
+
 shortcut('2', ['http://feedly.com/i/latest', 'https://www.reddit.com/r/vim/']);
 
 shortcut('3', [
   'http://feedly.com/i/latest', 'https://www.facebook.com/', 'https://www.tumblr.com/dashboard'
+]);
+
+shortcut('5', [
+  'http://feedly.com/i/latest', 'https://www.facebook.com/', 'https://www.tumblr.com/dashboard',
+  'https://inbox.google.com/?pli=1'
 ]);
 
 shortcut('5', [
